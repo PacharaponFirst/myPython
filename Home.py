@@ -1,10 +1,10 @@
 import streamlit as st
 
 st.header('Pacharapon Yuwansiri and Samart Srichueasakunchai')
-#
+#st.image(".pic/me.jpg")
 #st.image(".pic/samart.jpg")
 col1, col2, col3 = st.columns(3)
-st.image(".pic/me.jpg")
+
 with col1:
    st.header("Versicolor")
    st.image("./pic/iris1.jpg")
@@ -27,3 +27,12 @@ with col3:
 
 st.markdown(html_8, unsafe_allow_html=True)
 st.markdown("")
+
+st.markdown(html_8, unsafe_allow_html=True)
+st.markdown("")
+
+pt_len = st.slider("กรุณาเลือกข้อมูล petal.length")
+pt_wd = st.slider("กรุณาเลือกข้อมูล petal.width")
+
+sp_len = st.number_input("กรุณาเลือกข้อมูล sepal.length")
+sp_wd = st.number_input("กรุณาเลือกข้อมูล sepal.width")
