@@ -3,6 +3,16 @@ import streamlit as st
 st.header('Pacharapon Yuwansiri and Samart Srichueasakunchai')
 #st.image(".pic/me.jpg")
 #st.image(".pic/samart.jpg")
+
+colA, colB = st.columns(2)
+with colA:
+    st.header("Pacharapon Yuwansiri")
+    st.image("./pic/me.jpg")
+
+with colB:
+    st.header("Samart Srichueasakunchai")
+    st.image(".pic/samart.jpg")
+   
 col1, col2, col3 = st.columns(3)
 
 with col1:
@@ -24,9 +34,6 @@ with col3:
 <center><h5>การทำนายข้อมูลดอกไม้</h5></center>
 </div>
 """
-
-st.markdown(html_8, unsafe_allow_html=True)
-st.markdown("")
 
 st.markdown(html_8, unsafe_allow_html=True)
 st.markdown("")
