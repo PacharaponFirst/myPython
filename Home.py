@@ -1,7 +1,11 @@
 import streamlit as st
 
-st.header('Pacharapon')
+st.header('Pacharapon Yuwansiri and Samart Srichueasakunchai')
+st.image(".pic/me.jpg" + ".pic/samart.jpg")
+#st.image(".pic/me.jpg")
 col1, col2, col3 = st.columns(3)
+
+
 
 with col1:
    st.header("Versicolor")
