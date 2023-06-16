@@ -11,7 +11,7 @@ with colA:
 
 with colB:
     st.header("Samart Srichueasakunchai")
-    st.image(".pic/samart.jpg")
+    st.image("./pic/samart.jpg")
    
 col1, col2, col3 = st.columns(3)
 
