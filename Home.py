@@ -1,8 +1,8 @@
 import streamlit as st
 
 st.header('Pacharapon Yuwansiri and Samart Srichueasakunchai')
-st.image(".pic/me.jpg" + ".pic/samart.jpg")
-#st.image(".pic/me.jpg")
+st.image(".pic/me.jpg")
+st.image(".pic/samart.jpg")
 col1, col2, col3 = st.columns(3)
 
 
