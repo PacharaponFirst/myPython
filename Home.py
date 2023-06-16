@@ -33,6 +33,20 @@ with col3:
    st.header("Setosa")
    st.image("./pic/iris3.jpg")
 
+
+
+html_7 = """
+<div style="background-color:#EC7063;padding:15px;border-radius:15px 15px 15px 15px;border-style:'solid';border-color:black">
+<center><h5>สถิติข้อมูลดอกไม้</h5></center>
+</div>
+"""
+st.markdown(html_7, unsafe_allow_html=True)
+st.markdown("")
+
+dt = pd.read_csv("./data/iris.csv")
+st.write(dt.head(10))
+
+
 dt1 = dt['petal.length'].sum()
 dt2 = dt['petal.width'].sum()
 dt3 = dt['sepal.length'].sum()
@@ -49,16 +63,8 @@ if st.button("แสดงการจินตทัศน์ข้อมูล
 else:
     st.write("ไม่แสดงข้อมูล")
 
-html_7 = """
-<div style="background-color:#EC7063;padding:15px;border-radius:15px 15px 15px 15px;border-style:'solid';border-color:black">
-<center><h5>สถิติข้อมูลดอกไม้</h5></center>
-</div>
-"""
-st.markdown(html_7, unsafe_allow_html=True)
-st.markdown("")
 
-dt = pd.read_csv("./data/iris.csv")
-st.write(dt.head(10))
+
 
 
 html_8 = """
