@@ -1,10 +1,10 @@
 import streamlit as st
 
 st.header('Pacharapon Yuwansiri and Samart Srichueasakunchai')
-#st.image(".pic/me.jpg")
+#
 #st.image(".pic/samart.jpg")
 col1, col2, col3 = st.columns(3)
-
+st.image(".pic/me.jpg")
 with col1:
    st.header("Versicolor")
    st.image("./pic/iris1.jpg")
@@ -19,8 +19,11 @@ with col3:
 
    html_8 = """
 
-   
+
 <div style="background-color:#EC7063;padding:15px;border-radius:15px 15px 15px 15px;border-style:'solid';border-color:black">
 <center><h5>การทำนายข้อมูลดอกไม้</h5></center>
 </div>
 """
+
+st.markdown(html_8, unsafe_allow_html=True)
+st.markdown("")
